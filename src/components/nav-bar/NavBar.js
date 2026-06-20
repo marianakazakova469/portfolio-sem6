@@ -8,7 +8,7 @@ function NavBar({ backgroundColor, itemColor }) {
     <nav className="nav-bar" style={{ ...navStyle, fontFamily: 'HalyardDisplay, sans-serif' }} aria-label="Main navigation">
       <ul className="nav-list">
         <li className="nav-item">
-          <a className="nav-link" href="#landing-section" style={linkStyle}>
+          <a className="nav-link" href="/" style={linkStyle}>
             Home
           </a>
         </li>
