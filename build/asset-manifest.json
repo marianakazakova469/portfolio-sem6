@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.4d5010c0.css",
+    "main.js": "/static/js/main.26ec747e.js",
+    "static/js/453.0e0e2bcd.chunk.js": "/static/js/453.0e0e2bcd.chunk.js",
+    "static/media/mariana-image-two.png": "/static/media/mariana-image-two.348b1430a9c0f1fd5ed8.png",
+    "static/media/Gangitem.ttf": "/static/media/Gangitem.993375583b4f21dbf8c9.ttf",
+    "static/media/mariana-image-one.png": "/static/media/mariana-image-one.3e4778d08153bb6d9591.png",
+    "static/media/marble-texture.svg": "/static/media/marble-texture.2afef174b317924ea42c.svg",
+    "static/media/HalyardDisplay.otf": "/static/media/HalyardDisplay.5751f53a73aa3ba594d6.otf",
+    "static/media/Gangitem.otf": "/static/media/Gangitem.e58c7cd8dcd4acea7a6b.otf",
+    "static/media/hotspot.svg": "/static/media/hotspot.b91da60aed238da29c26844a5bc8a309.svg",
+    "index.html": "/index.html",
+    "static/media/star.svg": "/static/media/star.e3e2f0705112cd48242ef59f0ce1cf4c.svg",
+    "static/media/bottom.svg": "/static/media/bottom.60413133ef8d524f92958b8ee73c9fc8.svg",
+    "static/media/right.svg": "/static/media/right.c0ee2498705d831a99e4e40dfad02909.svg",
+    "static/media/left.svg": "/static/media/left.4bbea25ad26cd09b5bfbda63811eff74.svg",
+    "static/media/top.svg": "/static/media/top.9987904702e0c756c8b37ced1d4f4b10.svg",
+    "static/media/link.svg": "/static/media/link.2c99283f08a24c57727ff28f115b10a3.svg",
+    "main.4d5010c0.css.map": "/static/css/main.4d5010c0.css.map",
+    "main.26ec747e.js.map": "/static/js/main.26ec747e.js.map",
+    "453.0e0e2bcd.chunk.js.map": "/static/js/453.0e0e2bcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4d5010c0.css",
+    "static/js/main.26ec747e.js"
+  ]
+}
