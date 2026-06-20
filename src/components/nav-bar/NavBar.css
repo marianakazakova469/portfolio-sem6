@@ -1,0 +1,32 @@
+.nav-bar {
+  padding: 0.75rem 2rem;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+.nav-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: end;
+}
+
+.nav-item{
+  padding-right: 4rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-weight: 600;
+  transition: opacity 0.2s ease-in-out;
+  text-transform: uppercase;
+}
+
+.nav-link:hover,
+.nav-link:focus-visible {
+  opacity: 0.8;
+}

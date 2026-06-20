@@ -1,0 +1,142 @@
+html{
+  background-color: var(--dark-scarlet);
+  scroll-behavior: smooth;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-main {
+  background-image: url(./assets/marble-texture.svg);
+  background-size: cover;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.Landing-section {
+  border-bottom: 1px solid var(--gold);
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+#star-left {
+  position: absolute;
+  top: 98.2%;
+  left: 1%;
+}
+
+#star-right {
+  position: absolute;
+  top: 98.2%;
+  right: 1%;
+}
+
+.About-me h2, .Projects h2 {
+  color: var(--almond);
+  font-size: 10rem;
+  text-align: left;
+  margin: 2rem 0rem 0rem 0rem;
+  font-family: 'Gangitem', sans-serif;
+}
+
+.About-me h2 span, .Projects h2 span {
+  font-family: 'HalyardDisplay', sans-serif;
+}
+
+.About-me h3{
+  color: var(--pink-almond);
+  font-size: 6rem;
+  text-align: right;
+  margin: 2rem 0rem;
+  font-family: 'HalyardDisplay', sans-serif;
+}
+
+.About-me h3 span {
+  font-family: 'Gangitem', sans-serif;
+}
+
+.About-me p {
+  text-align: left;
+  font-size: 1.5rem;
+  margin: 0rem 24rem;
+  color: var(--almond);
+  font-family: 'HalyardDisplay', sans-serif;
+}
+
+.About-me{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.Projects{
+  margin: 6rem 0rem 0rem 0rem;
+  padding: 0rem 0rem 4rem 0rem;
+}
+
+.Projects .coasters-container {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  margin: 0rem 2rem;
+  padding-left: 1rem;
+}
+
+.Projects .coasters-container .coaster {
+  margin-left: -60px;
+}
+
+.Projects .coasters-container .coaster:nth-child(1) {
+  z-index: 4;
+  margin-left: 0;
+  margin-top: 240px;
+}
+
+.Projects .coasters-container .coaster:nth-child(2) {
+  z-index: 3;
+  margin-top: 160px;
+}
+
+.Projects .coasters-container .coaster:nth-child(3) {
+  z-index: 2;
+  margin-top: 80px;
+}
+
+.Projects .coasters-container .coaster:nth-child(4) {
+  z-index: 1;
+  margin-top: 0;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

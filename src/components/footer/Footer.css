@@ -1,0 +1,31 @@
+.Footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 0rem 2rem;
+    padding: 4rem 0rem;
+    border-top: 1px solid var(--gold);
+}
+
+.contact-info {
+    align-items: center;
+    display: grid;
+    gap: 2.125rem;
+    margin: 0rem 0rem 0rem 5rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "linkedin phone"
+      "email email";
+}
+
+.contact-info > .Connect:nth-child(1) {
+    grid-area: linkedin;
+}
+
+.contact-info > .Connect:nth-child(2) {
+    grid-area: phone;
+}
+
+.contact-info > .Connect:nth-child(3) {
+    grid-area: email;
+}
