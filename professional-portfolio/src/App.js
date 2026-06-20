@@ -5,20 +5,25 @@ import NavBar from './components/nav-bar/NavBar';
 import Heading from './components/heading/Heading';
 import Footer from './components/footer/Footer';
 import Coaster from './components/coaster/Coaster';
+import Projects from './components/projects/Projects';
 import marianaImageOne from './assets/mariana-image-one.png';
 import marianaImageTwo from './assets/mariana-image-two.png';
 import star from './assets/star.svg';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Dumpert from './Dumpert';
+import Menu from './components/heading/Menu';
 
-
-function App() {
+function HomePage() {
   return (
     <>
       <GlobalFonts />
-      <div className="App">
+      <div className="App" style={{ '--page-bg': 'var(--dark-scarlet)' }}>
         <NavBar backgroundColor="var(--almond)" itemColor="var(--gold)" />
         <main className="App-main">
           <div id='landing-section' className='Landing-section'>
-            <Heading h1FontSize={22} pFontSize={5.5} hrWidth={570}/>
+            <Heading>
+              <Menu h1FontSize={22} pFontSize={5.5} hrWidth={570}/>
+            </Heading>
             <img src={star} alt="Star" id='star-left'/>
             <img src={star} alt="Star" id='star-right'/>
           </div>
@@ -51,55 +56,22 @@ In my fifth semester I did an internship at Livewall as a iOS Mobile Developer, 
             />
             <h3>Mar<span>ian</span>a K<span>aza</span>kova</h3>
           </div>
-          <div id='projects' className='Projects'>
-            <h2>P<span>roj</span>ects</h2>
-            <div className='coasters-container'>
-              <Coaster id="dumpert"
-                size={340}
-                outerBg="var(--almond)"
-                ringBg="var(--dark-almond)"
-                ringBorder="var(--dark-scarlet)"
-                innerBg="var(--almond)"
-                text='dumpert'
-                textColor='var(--gold)'
-                bottomPosition={0}
-              />
-              <Coaster id="spotify"
-                size={340}
-                outerBg="var(--pink-almond)"
-                ringBg="var(--dark-pink-almond)"
-                ringBorder="var(--dark-scarlet)"
-                innerBg="var(--pink-almond)"
-                text='spotify'
-                textColor='var(--gold)'
-                bottomPosition={0}
-              />
-              <Coaster id="blind-dating"
-                size={340}
-                outerBg="var(--deep-puce)"
-                ringBg="var(--dark-deep-puce)"
-                ringBorder="var(--almond)"
-                innerBg="var(--deep-puce)"
-                text='blind dating'
-                textColor='var(--gold)'
-                bottomPosition={0}
-              />
-              <Coaster id="art-detective"
-                size={340}
-                outerBg="var(--antique-ruby)"
-                ringBg="var(--dark-antique-ruby)"
-                ringBorder="var(--almond)"
-                innerBg="var(--antique-ruby)"
-                text='art detective'
-                textColor='var(--gold)'
-                bottomPosition={0}
-              />
-            </div>
-          </div>
+          <Projects textColor="var(--almond)" />
         </main>
-        <Footer backgroundColor="var(--almond)" itemColor="var(--gold)" />
+        <Footer backgroundColor="var(--dark-scarlet)" />
       </div>
     </>
+  );
+}
+
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/dumpert" element={<Dumpert />} />
+      </Routes>
+    </Router>
   );
 }
 

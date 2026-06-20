@@ -1,0 +1,39 @@
+.Instructions { 
+    margin: 6rem 2rem ;
+    max-width: 50vw;
+}
+
+.Instructions .Heading {
+    border: none;
+}
+
+.Instructions .Heading h1{
+    font-size: 2.25rem;
+    font-family: 'Gangitem', sans-serif;
+    color: var(--text-color);
+    text-transform: uppercase;
+}
+
+.Instructions .Heading hr{
+    color: var(--text-color);
+    width: 100%;
+}
+
+.Instructions-list .Content {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.Instructions-list .Content .Instruction-number {
+    font-size: 2.25rem;
+    font-family: 'Gangitem', sans-serif;
+    color: var(--number-color);
+}
+
+.Instructions-list .Content .Instruction-text {
+    font-size: 1rem;
+    font-family: 'HalyardDisplay', sans-serif;
+    color: var(--text-color);
+}

@@ -1,0 +1,42 @@
+.strip {
+  width: 100%;
+  overflow: hidden;
+  background-color: var(--background-color);
+  color: var(--color);
+  white-space: nowrap;
+  border-top: 1px solid var(--color);
+  border-bottom: 1px solid var(--color);
+  padding: 1.313rem 0;
+}
+
+.strip-track {
+  display: inline-flex;
+  gap: 48px;
+  animation: scroll-strip 40s linear infinite;
+}
+
+.strip-track span {
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-family: 'HalyardDisplay', sans-serif;
+  flex-shrink: 0;
+}
+
+.strip-star {
+  width: 1.5rem;
+  height: auto;
+  flex-shrink: 0;
+  color: var(--color);
+}
+
+@keyframes scroll-strip {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}

@@ -29,3 +29,7 @@
 .contact-info > .Connect:nth-child(3) {
     grid-area: email;
 }
+
+.background{
+    background-color: var(--dark-scarlet);
+}

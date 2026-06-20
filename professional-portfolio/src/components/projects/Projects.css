@@ -1,0 +1,49 @@
+.Projects h2 {
+  color: var(--color);
+  font-size: 10rem;
+  text-align: left;
+  margin: 2rem 0rem 0rem 0rem;
+  font-family: 'Gangitem', sans-serif;
+}
+
+.Projects h2 span {
+  font-family: 'HalyardDisplay', sans-serif;
+}
+
+.Projects {
+  margin: 6rem 0rem 0rem 0rem;
+  padding: 0rem 0rem 4rem 0rem;
+}
+
+.Projects .coasters-container {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  margin: 0rem 2rem;
+  padding-left: 1rem;
+}
+
+.Projects .coasters-container .coaster {
+  margin-left: -60px;
+}
+
+.Projects .coasters-container .coaster:nth-child(1) {
+  z-index: 4;
+  margin-left: 0;
+  margin-top: 240px;
+}
+
+.Projects .coasters-container .coaster:nth-child(2) {
+  z-index: 3;
+  margin-top: 160px;
+}
+
+.Projects .coasters-container .coaster:nth-child(3) {
+  z-index: 2;
+  margin-top: 80px;
+}
+
+.Projects .coasters-container .coaster:nth-child(4) {
+  z-index: 1;
+  margin-top: 0;
+}

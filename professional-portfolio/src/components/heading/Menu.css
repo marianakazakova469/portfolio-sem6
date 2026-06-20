@@ -1,19 +1,4 @@
-.Heading {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border-left: 1px solid var(--gold);
-  border-right: 1px solid var(--gold);
-  margin: 0rem 2rem 0rem 2rem;
-}
-
-.Heading.no-border {
-  border-left: none;
-  border-right: none;
-}
-
-.Heading h1{
+.Menu h1{
   color: var(--almond);
   text-transform: lowercase;
   font-size: var(--h1-font-size);
@@ -21,7 +6,7 @@
   font-family: 'Gangitem', sans-serif;
 }
 
-.Heading p {
+.Menu p {
   color: var(--deep-puce);
   position: relative;
   text-transform: uppercase;
@@ -33,7 +18,7 @@
   font-family: 'HalyardDisplay', sans-serif;
 }
 
-.Heading hr{
+.Menu hr{
   color: var(--gold);
   background-color: var(--gold);
   width: var(--hr-width);
@@ -41,5 +26,5 @@
   z-index: 2;
   top: calc(var(--h1-font-size) - 8.65 * var(--p-font-size));
   height: 1px;
-  margin: 0;
+  margin: auto;
 }

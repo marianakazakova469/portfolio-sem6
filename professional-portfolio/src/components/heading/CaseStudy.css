@@ -1,0 +1,23 @@
+.CaseStudy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.CaseStudy h1{
+  color: var(--text-color);
+  text-transform: uppercase;
+  font-size: 7rem;
+  padding: 7rem;
+  font-family: 'Gangitem', sans-serif;
+}
+
+.CaseStudy p {
+  color: var(--text-color);
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0rem 10rem 10rem 10rem;
+  font-size: 2rem;
+  font-family: 'HalyardDisplay', sans-serif;
+}
