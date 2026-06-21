@@ -77,8 +77,8 @@
   transform: rotateY(180deg);
 }
 
-.coaster:hover .coaster-flip,
-.coaster:focus-within .coaster-flip {
+.coaster--spin:hover .coaster-flip,
+.coaster--spin:focus-within .coaster-flip {
   transform: rotateY(180deg);
 }
 

@@ -1,0 +1,29 @@
+.Instructions-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  padding: 2rem 1rem;
+  flex-wrap: wrap;
+}
+
+.Image-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(150px, 1fr));
+  gap: 1.5rem;
+  width: min(650px, 100%);
+  justify-items: center;
+}
+
+.Image-gallery .coaster {
+  position: relative;
+  top: auto;
+  right: auto;
+  bottom: auto;
+  left: auto;
+}
+
+.Image-gallery .coaster:nth-child(3) {
+  grid-column: 1 / span 2;
+  justify-self: center;
+}

@@ -12,17 +12,17 @@ import CaseStudy from './components/heading/CaseStudy';
 import Coaster from './components/coaster/Coaster';
 import Instructions from './components/instructions/Instructions';
 
-function Dumpert() { 
+function Spotify() { 
     return (
         <>
             <GlobalFonts />
-            <div className="App" style={{ '--page-bg': 'var(--almond)' }}>
-                <NavBar backgroundColor="var(--pink-almond)" itemColor="var(--dark-scarlet)" />
+            <div className="App" style={{ '--page-bg': 'var(--pink-almond)' }}>
+                <NavBar backgroundColor="var(--deep-puce)" itemColor="var(--almond)" />
                 <div id='landing-section' className='Landing-section'>
                     <Heading>
                         <CaseStudy 
                             textColor="var(--dark-scarlet)"
-                            h1Text="Dumpert"
+                            h1Text="Spotify"
                             pText="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea. "
                         />
                     </Heading>
@@ -42,37 +42,37 @@ function Dumpert() {
                     <div className="Image-gallery">
                         <Coaster
                             size={300}
-                            outerBg="var(--pink-almond)"
-                            ringBg="var(--dark-pink-almond)"
-                            ringBorder="var(--dark-scarlet)"
-                            innerBg="var(--pink-almond)"
+                            outerBg="var(--deep-puce)"
+                            ringBg="var(--dark-deep-puce)"
+                            ringBorder="var(--almond)"
+                            innerBg="var(--deep-puce)"
                             position= {'absolute'}
                             topPosition={37}
                             leftPosition={0}
                         />
                         <Coaster
                             size={300}
-                            outerBg="var(--pink-almond)"
-                            ringBg="var(--dark-pink-almond)"
-                            ringBorder="var(--dark-scarlet)"
-                            innerBg="var(--pink-almond)"
+                            outerBg="var(--deep-puce)"
+                            ringBg="var(--dark-deep-puce)"
+                            ringBorder="var(--almond)"
+                            innerBg="var(--deep-puce)"
                             position= {'absolute'}
                             topPosition={37}
                             leftPosition={0}
                         />
                         <Coaster
                             size={300}
-                            outerBg="var(--pink-almond)"
-                            ringBg="var(--dark-pink-almond)"
-                            ringBorder="var(--dark-scarlet)"
-                            innerBg="var(--pink-almond)"
+                            outerBg="var(--deep-puce)"
+                            ringBg="var(--dark-deep-puce)"
+                            ringBorder="var(--almond)"
+                            innerBg="var(--deep-puce)"
                             position= {'absolute'}
                             topPosition={37}
                             leftPosition={0}
                         />
                     </div>
                 </div>
-                <Strip textColor="var(--dark-scarlet)" backgroundColor="var(--pink-almond)" />
+                <Strip textColor="var(--almond)" backgroundColor="var(--deep-puce)" />
                 <Projects textColor="var(--dark-scarlet)" />
                 <Footer backgroundColor="var(--dark-scarlet)" />
             </div>
@@ -80,4 +80,4 @@ function Dumpert() {
     );
 }
 
-export default Dumpert;
+export default Spotify;

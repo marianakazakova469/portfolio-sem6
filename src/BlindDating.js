@@ -12,17 +12,17 @@ import CaseStudy from './components/heading/CaseStudy';
 import Coaster from './components/coaster/Coaster';
 import Instructions from './components/instructions/Instructions';
 
-function Dumpert() { 
+function BlindDating() { 
     return (
         <>
             <GlobalFonts />
-            <div className="App" style={{ '--page-bg': 'var(--almond)' }}>
-                <NavBar backgroundColor="var(--pink-almond)" itemColor="var(--dark-scarlet)" />
+            <div className="App" style={{ '--page-bg': 'var(--deep-puce)' }}>
+                <NavBar backgroundColor="var(--dark-scarlet)" itemColor="var(--almond)" />
                 <div id='landing-section' className='Landing-section'>
                     <Heading>
                         <CaseStudy 
-                            textColor="var(--dark-scarlet)"
-                            h1Text="Dumpert"
+                            textColor="var(--almond)"
+                            h1Text="Blind Dating"
                             pText="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea. "
                         />
                     </Heading>
@@ -31,8 +31,8 @@ function Dumpert() {
                 </div>
                 <div className="Instructions-section">
                     <Instructions 
-                        textColor="var(--dark-scarlet)"
-                        numberColor="var(--antique-ruby)"
+                        textColor="var(--almond)"
+                        numberColor="var(--pink-almond)"
                         instructions={[
                             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea. ",
                             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea. ",
@@ -42,42 +42,42 @@ function Dumpert() {
                     <div className="Image-gallery">
                         <Coaster
                             size={300}
-                            outerBg="var(--pink-almond)"
-                            ringBg="var(--dark-pink-almond)"
-                            ringBorder="var(--dark-scarlet)"
-                            innerBg="var(--pink-almond)"
+                            outerBg="var(--antique-ruby)"
+                            ringBg="var(--dark-antique-ruby)"
+                            ringBorder="var(--almond)"
+                            innerBg="var(--antique-ruby)"
                             position= {'absolute'}
                             topPosition={37}
                             leftPosition={0}
                         />
                         <Coaster
                             size={300}
-                            outerBg="var(--pink-almond)"
-                            ringBg="var(--dark-pink-almond)"
-                            ringBorder="var(--dark-scarlet)"
-                            innerBg="var(--pink-almond)"
+                            outerBg="var(--antique-ruby)"
+                            ringBg="var(--dark-antique-ruby)"
+                            ringBorder="var(--almond)"
+                            innerBg="var(--antique-ruby)"
                             position= {'absolute'}
                             topPosition={37}
                             leftPosition={0}
                         />
                         <Coaster
                             size={300}
-                            outerBg="var(--pink-almond)"
-                            ringBg="var(--dark-pink-almond)"
-                            ringBorder="var(--dark-scarlet)"
-                            innerBg="var(--pink-almond)"
+                            outerBg="var(--antique-ruby)"
+                            ringBg="var(--dark-antique-ruby)"
+                            ringBorder="var(--almond)"
+                            innerBg="var(--antique-ruby)"
                             position= {'absolute'}
                             topPosition={37}
                             leftPosition={0}
                         />
                     </div>
                 </div>
-                <Strip textColor="var(--dark-scarlet)" backgroundColor="var(--pink-almond)" />
-                <Projects textColor="var(--dark-scarlet)" />
+                <Strip textColor="var(--almond)" backgroundColor="var(--dark-scarlet)" />
+                <Projects textColor="var(--almond)" />
                 <Footer backgroundColor="var(--dark-scarlet)" />
             </div>
         </>
     );
 }
 
-export default Dumpert;
+export default BlindDating;

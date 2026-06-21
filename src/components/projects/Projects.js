@@ -19,10 +19,11 @@ function Projects({textColor}) {
           text='dumpert'
           textColor='var(--gold)'
           bottomPosition={0}
+          spinOnHover={true}
         />
         <Coaster id="spotify"
           size={340}
-          href="spotify.js"
+          href="/spotify"
           outerBg="var(--pink-almond)"
           ringBg="var(--dark-pink-almond)"
           ringBorder="var(--dark-scarlet)"
@@ -30,9 +31,10 @@ function Projects({textColor}) {
           text='spotify'
           textColor='var(--gold)'
           bottomPosition={0}
+          spinOnHover={true}
         />
         <Coaster id="blind-dating"
-          href="blind-dating.js"
+          href="/blind-dating"
           size={340}
           outerBg="var(--deep-puce)"
           ringBg="var(--dark-deep-puce)"
@@ -41,10 +43,11 @@ function Projects({textColor}) {
           text='blind dating'
           textColor='var(--light-gold)'
           bottomPosition={0}
+          spinOnHover={true}
         />
         <Coaster id="art-detective"
           size={340}
-          href="art-detective.js"
+          href="/art-detective"
           outerBg="var(--antique-ruby)"
           ringBg="var(--dark-antique-ruby)"
           ringBorder="var(--almond)"
@@ -52,6 +55,7 @@ function Projects({textColor}) {
           text='art detective'
           textColor='var(--gold)'
           bottomPosition={0}
+          spinOnHover={true}
         />
       </div>
     </div>

@@ -12,57 +12,10 @@ import star from './assets/star.svg';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Dumpert from './Dumpert';
 import Menu from './components/heading/Menu';
-
-function HomePage() {
-  return (
-    <>
-      <GlobalFonts />
-      <div className="App" style={{ '--page-bg': 'var(--dark-scarlet)' }}>
-        <NavBar backgroundColor="var(--almond)" itemColor="var(--gold)" />
-        <main className="App-main">
-          <div id='landing-section' className='Landing-section'>
-            <Heading>
-              <Menu h1FontSize={22} pFontSize={5.5} hrWidth={570}/>
-            </Heading>
-            <img src={star} alt="Star" id='star-left'/>
-            <img src={star} alt="Star" id='star-right'/>
-          </div>
-          <div id='about-me' className='About-me'>
-            <h2>Ab<span>ou</span>t M<span>e</span></h2>
-            <Coaster id="mariana-image-one"
-              size={300}
-              outerBg="var(--pink-almond)"
-              ringBg="var(--dark-pink-almond)"
-              ringBorder="var(--dark-scarlet)"
-              innerBg="var(--gold)"
-              imageUrl={marianaImageOne}
-              position= {'absolute'}
-              topPosition={37}
-              leftPosition={0}
-            />
-            <p>In my first 3 semester I studied Media Design where I learned about design patterns, usability heuristic and applied my knowledge to real-life group projects for clients partnering with university. 
-In my fourth semester during my Smart Mobile specialization, I found my passion for Mobile Development. 
-In my fifth semester I did an internship at Livewall as a iOS Mobile Developer, where I worked on Dumpert - an Dutch media platform, where users can watch and share funny videos or images.</p>
-            <Coaster id="mariana-image-two"
-              size={340}
-              outerBg="var(--almond)"
-              ringBg="var(--dark-almond)"
-              ringBorder="var(--gold)"
-              innerBg="var(--gold)"
-              imageUrl={marianaImageTwo}
-              position= {'absolute'}
-              topPosition={6}
-              rightPosition={0}
-            />
-            <h3>Mar<span>ian</span>a K<span>aza</span>kova</h3>
-          </div>
-          <Projects textColor="var(--almond)" />
-        </main>
-        <Footer backgroundColor="var(--dark-scarlet)" />
-      </div>
-    </>
-  );
-}
+import Spotify from './Spotify';
+import HomePage from './HomePage';
+import BlindDating from './BlindDating';
+import ArtDetective from './ArtDetective';
 
 function App() {
   return (
@@ -70,6 +23,9 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/dumpert" element={<Dumpert />} />
+        <Route path="/spotify" element={<Spotify />} />
+        <Route path="/blind-dating" element={<BlindDating />} />
+        <Route path="/art-detective" element={<ArtDetective />} />
       </Routes>
     </Router>
   );

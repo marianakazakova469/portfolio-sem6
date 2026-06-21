@@ -18,7 +18,8 @@ function Coaster({
   leftPosition,
   text = '',
   textColor = 'var(--coaster-text, #000000)',
-  href = null
+  href = null,
+  spinOnHover = false
 }) {
   const style = {
     '--size': `${size}px`,
@@ -37,9 +38,10 @@ function Coaster({
 
   const Tag = href ? 'a' : 'div';
   const tagProps = href ? { href } : {};
+  const coasterClassName = `coaster${spinOnHover ? ' coaster--spin' : ''}`;
 
   return (
-    <Tag className="coaster" style={style} aria-hidden="true" {...tagProps}>
+    <Tag className={coasterClassName} style={style} aria-hidden="true" {...tagProps}>
       <div className="coaster-flip">
         <div className="coaster-face coaster-front">
           <div className="coaster-ring">
